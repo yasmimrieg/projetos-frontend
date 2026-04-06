@@ -1,0 +1,114 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 960px; 
+    width: 95%;
+}
+
+header.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em; 
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5% 0;
+    gap: 2%;
+}
+
+
+.content-main {
+    width: 62.5%;
+}
+
+.hero {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+.last-contents {
+    display: flex;
+    gap: 15px;
+}
+
+.last-content-call {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.content-sidebar {
+    width: 33.33%;
+    background-color: #f0f0f0;
+    padding: 1.5%;
+    border-radius: 5px;
+}
+
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li {
+    width: 100%; 
+    background: #ddd;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 640px) {
+    .content {
+        flex-direction: column; 
+    }
+
+    .content-main, 
+    .content-sidebar {
+        width: 100%; 
+    }
+
+    .last-contents {
+        flex-direction: column; 
+    }
+}
